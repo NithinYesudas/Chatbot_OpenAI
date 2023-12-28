@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import openai
 app = Flask(__name__)
-openai.api_key  = "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"
+openai.api_key  = ""
 
 def get_completion(prompt, model="gpt-3.5-turbo"):
     messages = [{"role": "user", "content": prompt}]
